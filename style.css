@@ -1,0 +1,146 @@
+
+* { 
+  margin: 0; padding: 0; }
+html {
+	height: 100%;
+}
+body {
+	color: #ffffff;
+  background-color: #000;
+	font-family: "helvetica";
+  font-weight: lighter;
+	background-image: url('img/img.gif');
+	background-size: cover;
+	background-position: 50% 0;
+	height: 100%;
+	text-align: center;
+}
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  padding: 20px;
+
+}
+.header a {
+  font-family: "helvetica";
+  font-weight: lighter;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+
+.header:hover {
+  mix-blend-mode: difference;
+
+}
+
+.header a.active {
+  mix-blend-mode: difference;
+}
+
+.header-right {
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  padding: 20px;
+  font-family: 'Helvetica';
+}
+
+.header-right span{
+  font-family: "helvetica";
+  font-weight: lighter;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.header-right:hover {
+  mix-blend-mode: difference;
+
+
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+	font-size: 18px;
+  font-family: "helvetica";
+  font-weight: lighter;
+  display: block;
+  color: #9e9c9c;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 25px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+body:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+}
+
+main {
+	display: inline-block;
+	vertical-align: middle;
+	/* box-shadow: 0 15px 15px rgba(0,0,0,0.5); */
+}
+p {
+	/* text-align: left; */
+	margin-top: 20px;
+}
+a {
+	color: #ffffff;
+}
+pre {
+	/* text-align: left; */
+	margin-top: 20px;
+}
+
+
